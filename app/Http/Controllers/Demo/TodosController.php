@@ -33,7 +33,6 @@ class TodosController extends Controller
         $todo->title = $request->title;
         $todo->completed = $request->completed;
         $todo->save();
-
         return response()->json([
             'message' => 'Todo Added Successfully',
             'todo' => $todo

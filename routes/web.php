@@ -26,6 +26,10 @@ Route::group([
 //    'middleware' => 'admin'
 ], function () {
 
+    //GM CRUD
+    Route::get('example_dt','gm\ExampleController@list');
+    Route::resource('example','gm\ExampleController');
+
     // Dashboard
     //----------------------------------
 
