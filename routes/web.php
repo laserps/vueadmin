@@ -317,6 +317,10 @@ Route::group([
             ]);
         });
     });
+
+    Route::group(['prefix' => 'documents'], function() {
+        Route::get('quotation/{id?}','DocumentController@Quotation');
+    });
 });
 
 /*
